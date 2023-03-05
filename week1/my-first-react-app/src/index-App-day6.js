@@ -1,8 +1,6 @@
 import React from 'react';
 import {render} from 'react-dom';
-import { ListOfParticipants } from './ListOfParticipants';
-import { StringsList } from './StringsList';
-
+import {ListofParticipants} from "./App"
 
 const data = [
   {name:"Alex", email:"alex@gmail.com"},
@@ -12,11 +10,8 @@ const data = [
 
 render(
   <React.StrictMode>
-  <ListOfParticipants
+  <ListofParticipants
     list={data}
-  />
-  <StringsList
-    list={['Banana','Coconut']}
   />
   </React.StrictMode>,
   document.getElementById('root'),
