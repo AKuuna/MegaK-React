@@ -9,6 +9,6 @@ export const ListOfParticipants = (props) => {
      
   return <>
     <StringsList list={names}/>
-    <RecordsCount list={names}/>    
+    <RecordsCount count={names.length}/>    
     </>;
 }
