@@ -1,23 +1,12 @@
 import React from 'react';
-import {render} from 'react-dom';
-import { ListOfParticipants } from './ListOfParticipants';
-import { StringsList } from './StringsList';
+import { render } from 'react-dom';
+import { App } from './App';
+import { Counter } from './Counter';
 
-
-const data = [
-  {name:"Alex", email:"alex@gmail.com"},
-  {name:"Jacob", email:"jc1@gmail.com"},
-  {name:"DJ Snake", email:"snake_dj@gmail.com"}
-];
 
 render(
   <React.StrictMode>
-  <ListOfParticipants
-    list={data}
-  />
-  <StringsList
-    list={['Banana','Coconut']}
-  />
+    <App/>
   </React.StrictMode>,
   document.getElementById('root'),
-);
+)

@@ -1,14 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
+import { Counter } from './Counter';
 
 
-export const ListofParticipants = (props) => {
-   const names = props.list
-       .map(person => person.name)
-       .join(', ')
-       
-  return <>
-    <p>{names}</p>
-    <p>All: {props.list.length} records.</p>
-    </>;
-}
+export const App = props => {
+  const [show, setShow] = useState(true);
+
+  setTimeout(() => {
+    setShow(false);
+  }, 5000);
+
+  return show ? <Counter/> : null;
+};
