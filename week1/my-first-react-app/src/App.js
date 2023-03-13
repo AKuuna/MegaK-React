@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './App.css';
 import { Clock } from './Clock';
-import { Counter } from './Counter';
+/**import { Counter } from './Counter';**/
 import { NumberList } from './NumberList';
 
 
